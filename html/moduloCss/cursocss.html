@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta charset="utf-8">
+    <link rel="icon" href="../../imagen/icon/icono.ico">
+    <link rel="stylesheet" href="../../css/cajascss.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="style_css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Rampart+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/993f2d7384.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+
+    <title>Css</title>
+</head>
+<body>
+    <h2 id=inicial></h2>
+    <header>
+        <nav class="nav">
+            <ul  class="nav_ul">
+                <li class="nav_li "><i class="fas fa-home"></i><a href="../a_Paginaprincipal/introduciondelcuerso.html">Inicio</a></li>
+                <li class="nav_li"><i class="fas fa-code"></i><a href="../moduloshtml/modulos.html">curso de html</a></li>
+            </ul>
+            <ul class="nav_res-ul">
+                <div class="nav_res_buttom-container">
+                    <div class="nav_res-buttom fas fa-bars"></div>
+                </div>
+                <div class="nav_li-contener">
+                    <li class="nav_res-li"><i class="fas fa-home"></i><a href="../a_Paginaprincipal/introduciondelcuerso.html">Inicio</a></li>
+                    <li class="nav_res-li"><i class="fas fa-code"></i><a href="../moduloshtml/modulos.html">curso de html</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <article class="article">  
+        <div class="position--fixed">
+            <a href="#inicial">volver</a>
+         </div>
+      
+          
+        <div >
+            <h2>Curso de CSS</h2>
+        </div>
+        <div class="as">
+            <h3>Estructura de CSS</h3>
+            <p>
+                La estructura de CSS esta compuestas con selectores y propiedades, valores.<br>
+            </p>
+             <img src="../../imagen/css_img/EstructuraCss.png"> 
+           
+            <p>
+                Los selectores son seleciones de los elementos,son como distintas formas de llamar a una funcion. <br>
+                Estos seletores son varios y vamos nombrar algunos mas usados. <br>
+                -Universales: sirve para selecionar todos los elementos de la paguina y se nombra con un (" * ").<br>
+                -Por etiqueta: este selector funciona con solo porner las etiquetas de la estructura de html (" h2").. etc,.<br>
+                -Clases: la clases son llamadas deforma de atributo y se la llama con un (".name").<br>
+                En este curso usaremos el atributo "class" para el selector clase.<br>
+
+                Propiedades:<br>
+                Las propiedades son todo lo que le da estilo a una caja,texto, y imagen. Ahy miles de propiedades donde daremos de iniciar este curso para aprender lo suficiente para crear nuestra primera paguina wed.<br>
+                Acontinuacion desarrollaremos el curso de css con cajas para que sea mas visible cada función.<br>
+            </p>
+        </div>
+        <div class="caja__Medidas"> 
+            <h2 class="caja__Medidas-titulo">Unidades de medidas</h2>
+            <p>
+                En css existen distintas unidades de medidas ademas de pixeles. ademas de eso funciona como optimisacion de codigo y adaptacion en distintos depositivos.<br>
+                Tambien conosidas como medidas relativas(rem,em).<br>
+                -Em: Un "em" es igual a 16px, por ejemplo "5em", son 16*5=80px, para cambiar el por defecto del navegador del em es tan facil como poner los pixel en la caja contenedora, por ejemplo 1em vale 16 por defecto, y ahora ponemos a la caja un 20px y ahora 1em valdra 20px.<br>
+                nota la unidades de medidas funciona con cualquier propiedad que trabaja con unidades.<br>
+            </p>
+            <img src="../../imagen/css_img/unidades.png">
+            <p>
+                ejemplo visual:
+                <h1 class="title">Hola -->predeterminado por el navegador</h1>
+                <div class="title_em"> 
+                    <h1 class="title_em1">Hola -->cambiado a 25px</h1>
+                </div>
+                <br>
+            </p>
+
+        </div>
+        <div class="box_model">
+            <h2>Box_model</h2>
+            <p>
+                Box_model es el modele en que trabajan las cajas.<br>
+                Se compone con las propiedades,<b> content,paddig,border,Margin</b><br>
+                la forma de modificar el content se utilizar la propiedad line-height.<br>
+                el paddig con la propiedad padding<br>
+                El border con la propiedad boder<br>
+                EL margin con la propiedad margin<br>;
+                ejemplo:<br>
+                <div class="box_model--contenedor">
+                    <div class="box_model--margin">margin: modifica el espacio por fuera de la caja</div>
+                    <div class="box_model--border">border: agrega bordes a la caja</div>
+                    <div class="box_model--padding">padding: modifica el espacio dentro de la caja</div>
+                    <div class="box_model--content">content: modifica el texto</div>
+                </div>
+                <br>
+                Acontinuacion desarrollaremos cada una de las propiedad mas detalladas.<br>
+            </p>
+        </div>
+        <div class="Caja__texto">
+            <h2 class="Caja__texto--titulo">Propiedades de texto</h2>
+            <p> 
+                Tipologia de texto, existen varios pero nombraremos los que mas se usan.
+                <br>
+               
+                <div class="Caja__texto--propiedades">
+                <p class="Caja__texto--caja1">Font-size: tamaño de texto.</p><br>
+                <p class="Caja__texto--caja2">Font-family: tipo de texto.</p><br>
+                <p class="Caja__texto--caja3">Line-height:El espacio total que ocupa,tambien hay que tener encuenta los valores que toma se devide por la mitad,
+                    por ejemplo se agrega un valor de 1,<br> 
+                    esta se ira 0.50 para ariba y para baja complentado el valor 1.</p><br>
+                <p class="Caja__texto--caja4">Font-weight:define el guersor del texto.</p><br>
+                </div>
+            </p>
+        </div>
+      
+        <div class="Caja__teoriadecaja"> 
+            <h2 class="Caja__teoriadecaja--titulo">Teoria de caja</h2>
+            <p> 
+                Existen dos tipos de caja en css, las en linias y las en block.<br>
+                Las que son en bloques son las mas importantes, simpre se van a juastar a su contenedor.<br>
+                En cambio la caja en linia se adpta a su contenido, ejemplo el h2 tiene una caja en block, y b es linia.<br>
+                Pero tambie podes cambiar su comportamiento, por ejemplo a um block podemos tranformalo en linia, con la propiedad "display".<br>
+                Acontinuacion veremos unas cajas de forma de ejemplo visual.<br>
+                <div class="caja_displey">
+                    <div class="caja_displey--antes">
+                        <h1 class="Caja__teoriadecaja--ejem">block sin display</h1>
+                        <b class="Caja__teoriadecaja--ejem2">linia sin display</b>
+                    </div>
+                        <div class="Caja_displey--despues">
+                            <h1 class="Caja__teoriadecaja--ejem--disp1">block</h1>
+                            <b class="Caja__teoriadecaja--ejem--disp2">linia</b>
+                        </div>
+                </div>
+
+                <div class="Caja__teoriadecaja--Nota"> Como nota: algunas prpiedades no sirve en unas de las dos cajas, como los elementos en linia no se le puede dar un height,weight. En cambio con el block si se puede.</div>
+               
+                Esas son las cajas y su propiedad comun, ahora veremos mas propiedad que nos trae el <b>display</b>.<br>
+                como sera largo les dejare atajos.<br>
+                <div class="Caja__teoriadecaja--Atajo">
+                -Inline-block<br>
+                -Table<br>
+                -Inline-Table<br>
+                -List-Item<br>
+                -Table-Cell<br>
+                -Table-Row<br>
+                -Table-Column<br>
+                -Grid<br>
+                -Flex<br>
+                -Inline-Flex<br>
+                -Inline-grid<br>
+                </div>
+                <h3>Inline-Block</h3>
+                Un Inline-block nos perpimete modificar la caja de un linea a block, con un alto y un ancho, es decir que nos permite utilizar height,weight en una caja en linia, esto hace que se ponga una alado de otra.<br>
+                ejemplo:<br>
+                <div class="caja_teoriadecaja--inlineblock"></div>
+                <div class="caja_teoriadecaja--inlineblock"></div>
+                <div class="caja_teoriadecaja--inlineblock"></div>
+
+                <h3>Table</h3>
+                con table hacemos que se comporte como tabla.<br>
+                <br>
+            </p>
+        </div>
+        <div class="Paddig">
+            <h2 class="Paddig_titulo">Paddig</h2>
+            <p>
+                El paddig es la distancia del texto y la caja, con la propiedad podemos modificar esa distancia, tambie en paddig es una propiedad acortada.<br>
+                la forma abreviada es:.<br>
+                <div class="Paddig_ejem1">
+                    paddig: 1px 3px 3px 4px;<br>
+                    paddig: top,right,bottom,left;
+                </div>
+                <br>
+                ejemplo:<br>
+                <div class="Paddig_ejem2">texto</div>
+                <br>
+                <br>
+            </p>
+        </div>
+        <div class="Margin">
+            <h3>Margin</h3>
+            Es el espacio entre las cajas: ejemplo;<br>
+            <div class="Margin_caja1">caja1</div>
+            <div class="Margin_linia">margin</div>
+            <div class="Margin_caja2">caja2</div>
+            <br>
+            Tambien es una propiedad acortada como padding y se mide con distintas medidas, actua tal cual como el padding pero por fuera de la caja.<br>
+            <br>
+        </div>
+        <div class="border"> 
+            <h3>Border</h3>
+            La propiedad border es simpleamente el borde de la caja, tambien es una propiedad acortada y existe distintos tipos de border<br>
+            -border-raddius: es para rondear el borde.<br>
+            Estilos de borde: solid, dashed,double. etc.<br>
+            <b>Para agregar un border</b> es de la siguiente manera:<br>
+            <div class="border--ejemplo">
+                propiedad: tamaño estilo color;<br>
+                border: 4px solid red;<br>
+            </div>
+            <br>
+            <h3>Outline</h3>
+                Outline tambien es como un border pero en este caso no ocupa un espacio real pero si es vesible, es como un resaltador.<br>
+                ejemplo:<br>
+                <div class="outline1"></div><div class="outline2">outline: como se puede apreciar el outline no ocupa espacio de la caja por eso trapasa la caja</div><div class="outline3"></div><div class="outline4">border: en cambio el border se come 10px de la caja</div>
+        </div>
+        <div class="position">
+            <h3 class="">Position</h3>
+            position es una propiedad acortada y su funcion es la posicion de los elementos y afecta el flujo de html(El orden de los elementos), esto hace que adquiera 4 propiedades, como top, left, right, bottom.<br>
+            Existen 4 posicion que desarrollremos acontinuacion.<br>
+            
+                -Position-Static: static nos esta diciendo que el elementos no esta posicionado.<br>
+                -position-relative: con la propiedad relative el espacio se sigue conserva.<br>
+                ejemplo:<br>
+                <div class="position--relative">caja 1</div>
+                <div class="position--relative3">caja 2</div>
+                <div class="position--relative2">caja 2</div>
+                <div class="position--relative4">texto explicativo</div>
+                Ademas obtiene la propiedad Z index.<br>
+                z index es como la forma de posicionar la caja ariba de la otra.<br>
+                ejemplo:<br>
+                <div class="position--zindex">caja 1</div>
+                <div class="position--zindex2">caja 2</div>
+                Solo con poner a la caja 1 la propiedad z index y un valor de cualquier numero pero mayor de 1, es recomendable ir de 100 en 100 , la estaria posicionando primera que la caja 2
+                <br>
+                <div class="position--zindex--con">caja 1</div>
+                <div class="position--zindex--sin">caja 2</div>
+
+                -position-absolute: Es igual a relative pero su funcion es que el espacion reservado de la caja ya no exista, y su punto de referencia es el contenedor(solo si esta posisionado) o el biupor.
+                ejemplo:<br>
+                <div class="position--absolute">caja 1 = absolute</div>
+                <div class="position--absolute2">caja 2= sin absolute</div>
+                <br>
+                La caja 1 presenta la propiedad absolute, por lo cual su espacio desaparece probocando que la caja 2 se "funcione" con ella.<br>
+                -Position Fixed: tiene la misma caraterista de absolute pero queda de forma fijada en la pantalla, se usan para menus y publisidades. por ejemplo.<br>
+         
+                <br>
+
+                -position sticky: position sticky tiene lo mismo que fixed pero esta conserva su espacio. <br>
+                por ejemplo.<br>
+                <div class="position--propiedades">
+                   <br>
+                   texto ejemplo__________________________________________________________________________________________________________________________________
+                   ___________________________________________________________________________________________________________________________________
+                   ___________________________________________________________________________---
+                   __________________________________________________________________________________________________________________________________
+                   ____________________________________________________________________________________________________
+                   ___________________________________________________________________________
+                   ___________________________
+                   ___________________________
+
+                    <div class="position--sticky">ejemplo de postion sticky</div>
+                </div>
+        </div>
+
+        <div class="overflow">
+            <h3>overflow</h3>
+            <p>
+                overflow es la propiedade para stroliar, es desir que es para que el texto no salga de una caja pequeña.<br>
+                existen distintas caraterista de overflow.<br>
+                por ejemplo<br>
+                <div class="overflow--sin">sin overflow  ___<br>______________<br>_______________<br>_____________________<br>_______________________<br>___________________ ___<br>______________<br>_______________<br>______________________</div>
+                <div class="overflow--auto"> overflow-auto ___<br>__________<br>_______________<br>__________<br>_____________<br>__________<br>_______<br>___________<br>___________<br>______<br>_______ ___<br>__________<br>_______<br>________<br>_______<br>_______ ___<br>_______<br>_____________<br>__________<br>___________<br>____________</div>
+                <div class="overflow--scroll"> overflow-scroll ___<br>______________<br>_________________________<br>_____________________________________<br>_________________________________<br>_________________ ___<br>______________<br>__________________________<br>_____________________________________<br>_________________________________<br>___________________ ___<br>______________<br>___________________________<br>_______________________<br>________________ _________________<br>____________ _______ ___<br>______________<br>___________________________<br>_____________________________________<br>_________________________________<br>___________________</div>
+                <div class="overflow--hidden"> overflow-hideen ___<br>__________<br>_______________<br>__________<br>_____________<br>__________<br>_______<br>___________<br>___________<br>______<br>_______ ___<br>__________<br>_______<br>________<br>_______<br>_______ ___<br>_______<br>_____________<br>__________<br>________________<br>_________________</div>
+            
+            </p>
+        </div>
+        <div class="pseudo-elementos">
+            <h3> pseudo-elemento</h3>
+            <p>
+                Un pseudo elementos es no foman parte del dom y no funcionan en elementos en linia.<br>
+                los pseudo-elementos son<br><br>
+                <div class="frist-line">
+                    ::first-line : el pseudo-elementos afecta a la primera linia de un texto, es desir que cualquier propiedad que le pongamos sera afecta a la primera linia.<br>
+                </div>
+                <br>
+                <div class="frist-letter">
+                ::first-letter: afecta a la primera letra de un texto.<br>
+                </div><br>
+                
+                    ::placeholder: modifica las prpiedades del texto que esta dentro del imputs.<br>
+                    <form class="placeholder"> 
+                        <br>
+                        <input type="text" value="SIN placeholder">
+                        <input type="text" placeholder="CON placeholder">
+                    </form>
+            
+                <br>
+                <div class="selection">::selection: Modifica la forma de seleccionar un elemento, para ver el ejemplo seleccionar esta descripcion.<br>
+                </div>
+                <br>
+            
+                ::before: es pseudo-elementos no existe en el dom, y al aplicarlo estamos creando un hijo del elemento,solo funciona con la etiqueta CONTENT,se puede indetificar porque no se puede selecionar<Br>
+            
+                <br>
+                
+                ::after: Es lo mismo que before pero va despues.<br>
+                
+                <div class="before-after">:</div>
+            </p>
+        </div>
+
+        <div class="pseudoclases">
+            <h3>Pseudoclases</h3>
+            <p>Los pseudoclases tienen la misma propiedad que pseudoelementos, las pseudoclases escucha un evento, es desir que reproduce un evento.<br>
+            Existen barias pseudoclases y seran nombrados acontinuacion.<br>
+            <br>
+            :hover: funciona en cualquier elemento. al pasar el mause sobre el elemento cambia segun la propiedad que fue agregada.<br>
+            ejemplo<br>
+            <div class="hover">ejemplo</div>
+                <br>
+            :link: cambia un link que aun no hemos visitados.<br>
+            ejemplo<br>
+            <a class="link" href="../modulo_js/Curso_js.html" target="_blank">javascrip</a>
+            </p>
+            :active: al dejar apretado un boton cambia los estilos.<br>
+            ejemplo<br>
+            <div class="active">ejemplo</div>
+            <br>
+            :focus: se aplica a los imputs y su función es su enfoque.<br>
+            ejemplo<br>
+            <input class="focus" title="text">
+        </div>
+        <div class="objet">
+            <h3>Object Fit</h3>
+            <p> 
+                La propiedad Object Fit se aplica en las imagenes, para cambiar la resoluciones.<br>
+                 ejemplo:<br>
+                <div class="objet_fit--propiedades">
+                    contain, cover, none,scale-dow, position.
+                </div>
+                <div class="objet_fit">
+                    <img alt="" style="width: 261.3px; height: 214.5px; margin-top: -17.2px; margin-left: 0px;" class="" src="https://tse3.explicit.bing.net/th?id=OIP.cLFYh5JgUcvbxNL4oz9WjAHaGF&amp;pid=Api&amp;P=0&amp;w=261&amp;h=214" id="yui_3_5_1_1_1656633015744_782">
+                </div>
+            </p>
+        </div>
+        <div class="cursor">
+            <h3>Cursor</h3>
+            <p>
+                cursor es una propiedad que nos permite cambiar el cursor.<br>
+                ejemplo:<br>
+                <div class="cursor--active">
+            </p>
+        </div>
+        <div class="colorizacion">
+            <h3>Colorizacion</h3>
+            <p>
+                la colorizacion se maneja con sexsagesimal #fff, rgb y rgba para la opacidad del color,
+            </p>
+        </div>
+        <div class="Reposive">
+            <h3>Reposive mobili first</h3>
+            <p>Con Reposive first adaptamo un diseño en varias resoluciones, como table, y celular.<br>
+            <h3>Menu Reposive</h3>
+            menu reposive es la adaptacion de menus en distintos dispositivos.<br>
+            </p>
+        </div>
+
+        <div class="flex">
+            <h3>flex</h3>
+            <p>
+                flex-box: flex debe contener de flex conteiner, y flex item.<br>
+                el conteiner sera el que llebara la propiedad flex ya que si damos a cualquier elemento este se comporta como un block.<br>
+                flex box tiene dos ejes, el eje x ,y estos se nombran como cross axis (eje x), main axis(eje y).<br>
+            </p>
+            <p>
+                <h3>display flex</h3>
+                displey flex es la propiedad para mantener 2 cajas en el mismo tamaño.<br>
+                ejemplo:<br>
+                <div class="flex_contener">
+                    <div class="flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id labore maxime ratione dicta, veritatis nobis tempora aut laudantium.</div>
+                    <div class="flex-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id labore maxime ratione dicta, veritatis nobis tempora aut laudantium. Possimus atque velit aut voluptate officiis error distinctio est modi ratione vero.</div>    
+                </div>
+            </p>
+            <p>
+               <h3>flex direction</h3>
+                con la propiedad flex direction podemos cambiar la direccion de las cajas, esto solo se aplica al contenedor.<br>
+                ejemplo:<br>
+                <div class="flex-direction_contener">
+                    <div class="flex-direction--item">
+                    </div>
+                    <div class="flex-direction--item">
+                    </div>
+                    <div class="flex-direction--item">
+                    </div>
+                    <div class="flex-direction--item">
+                    </div>
+                    <div class="flex-direction--item">
+                    </div>
+                </div>
+                <p> 
+                    <h3>Propiedades de contenedor de flex</h3>
+                    flex-direction<br>
+                    flex-wrap<br>
+                    justify-content<br>
+                    align-items<br>
+                    align-content<br>
+
+                    <h3>propiedades de los item</h3>
+                    aling-self: malipula una caja(Alinasion en el corss axis)<br>
+                    flex-grow: rellena el espasio sobrante, probocando una caja flexible<br>
+                    flex-shrink: fueza a las caja que llege a tal medidas.<br>
+                    orden: el elemto mas chico va al inicio del min axis y el mas grasde al final<br>
+                </p>
+                <h3>Practica con flex</h3>
+                <div class="flex_emeil">  
+                    <form clases="form"> 
+                        <div class="form__section">
+                            <input type="text" class="form_input2" placeholder="Nombre">
+                        </div>
+                        <div class="form__section">
+                            <input type="email" class="form_input2" placeholder="email">
+                        </div>
+                        <div class="form__section">
+                            <textarea  class="form_input2" placeholder="Descripcion" ></textarea>
+                        </div>
+                        <div class="form__section">
+                            <input type="submit" class="form_input2" placeholder="Enviear">
+                        </div>
+                    </form>
+                </div>
+              
+        </div>
+
+        <div>
+            <h3>Grid</h3>
+            <p> 
+                grid es eestilo lageado, es un valor de la propiedad displey,trabajamos atrabes de grillas<br>
+                grid funcionas atrabes de celdas, columnas, cuando le damos displey grid a un elemento este se comporta como un bloque<br>
+                los grid item son hijos directo de gird contener.<br>
+                hay dos tipos de grid, que son <b>colum y row</b><br><br>
+                Acontinuacion empezamos con las propiedades.<br>
+                <h3>Propiedades de grid contener</h3>
+                display:grid : se implenta al contenedor y se comporta como un bloque.<br>
+                grid-templete-rows: agrega filas,las filas como columnas se agrega con solo poner las medidas, ejemplos, (39px 44px 40px= es igual a 3 filas)<br>
+                grid-templete-colum: agrega columnas<br>
+                medidas espaciales de grid: para que la grilla quede dinamica se debe agregar la mediada fr. ejemplo<br>
+                <div class="grid-semi">  
+                    <div class="grid-semi-column"></div>
+                    <div class="grid-semi-column"></div>
+                    <div class="grid-semi-column"></div>
+                </div>
+                grip-row-grap: es como un margin, la distancia que entre celdas, entresi. ejemplo<br>
+                grip-gap: es el llorjan de gap;
+                <div class="grid-grap">  
+                    <div class="grid-grap-column"></div> 
+                    <div class="grid-grap-column"></div>
+                    <div class="grid-grap-column"></div>
+                </div>
+                grid-colum y grid-row: son um yorjan, estas propiedades agranda las filas, referencia (donde n/asta n)<br>
+                nota: tambien es recomendabele poner span para falitar, "de disimos anda de la linia 1 /span 2 y que ocupe 2 column"<br>
+                nota: para seleccionar un elemento de iguales clases se utiliza el seuelemento (:first-child, :nth-child(n))<br> 
+                ejemplo:<br>
+                <div class="grid-column_contener">
+                    <div class="grid-column_contener-column">1</div>
+                    <div class="grid-column_contener-column">2</div>
+                    <div class="grid-column_contener-column">3</div>
+                    <div class="grid-column_contener-column">4</div>
+                    <div class="grid-column_contener-column">5</div>
+                    <div class="grid-column_contener-column">6</div>
+                </div>
+                <h3>grid implicito y explicito  </h3>
+                repeat():esta funcion lo que hace es que "abrevia"las forma de poner clumnas y filas, agregando 2 parametros, ejemplo : repeat(3,150px), 3 veses que se repita 150px.<br>
+                grid-auto-row,column: rellena automaticamente las filas  columnas<br>
+                grid-auto-flow: cambia las filas por columnas y deserversa, tambien rellena grilla rota con dense<br>
+                <h3>grid dinamico</h3>
+                min-content: valdra el miniomo del contenido en la grlla, susede viseversa con el max-content.<br>
+                minmax(): pone un valor fijo a la grilla con minimo y un max de creser.<br>
+                nota: tambien se pude juntar las dos cosas.<br>
+                auto-fill: genera la cantidad de columnas que pueda lo que entre.<br>
+                auto-fit: escala los elementos.<br>
+                <h3>alinasion y control de flujo</h3>
+                justify-item: centra los elementos de manera horizontal.<br>
+                align-items:Se alinia verticualmentes.<br>
+                justify-content: centra todo los item;
+                align-content: centra los intem;
+                ejemplo:<br>
+                <div class="grid-alinasion">
+                    <div class="grid-aliniasion--item">1</div>
+                    <div class="grid-aliniasion--item">2</div>
+                    <div class="grid-aliniasion--item">3</div>
+                    <div class="grid-aliniasion--item">4</div>
+                    <div class="grid-aliniasion--item">5</div>
+                    <div class="grid-aliniasion--item">6</div>
+                </div>
+                align-self y justify-self: alinia a un item solo:
+                plece-self: avrevacion de aling-self y justify-self<br>
+                order: cambiar de orden los item.<br>
+
+              <h3>practica de grid</h3>
+                <a href="../moduloCss/practica_galeri.html">galeria</a><br>
+
+                <h3>grid area</h3>
+                el area es para unir las seldas.<br>
+                propiedades de grid areas:<br>
+                <div class="area">
+                    <div class="area-item header">header</div>
+                    <div class="area-item main">main</div>
+                    <div class="area-item aside">aside</div>
+                    <div class="area-item footer">footer</div>
+                </div>
+            </p>
+        </div>
+       <div >
+           <h3>Responsive desing</h3>
+           <p>
+               trabajaremos con estructuras felxible(img,contenedores,video)<br>
+               media queries<br>
+               @media: se usa en en consultas de medios para aplicar diferentes estilos para tipos/ dispositivos de medios.<br>
+               all: apto para todos los dispositivos.<br>
+               print:Destinado a materiales impreso  y visualizacion de documentos en una pantalla en el modo de vista previa de impresion.<br>
+               screen:destinado principalmente a las pantallas.<br>
+               speech:destinado a sintetizadores de voz.
+
+               operadores and|or: si la pantalla tiene tal resoluciones hacer esto.<br>
+               orentation: landscape y potrait<br>
+               ejemplos,<br>
+               <div class="reponsi">utilizando la propiedad @media screen </div>
+            </div>
+           </p>
+       </div>
+       <div>
+           <h3>trasition</h3>
+           <div class="trasition">
+               <input type="button" value="boton">
+           </div>
+
+           <h3>animaciones</h3>
+           las animaciones se utiliza @keyframes pa que funcione.<br>
+           ejemplos,<br>
+           utilizando la propiedad animacion:<br>
+           <div class="animacion">animacion</div>
+
+           <p>
+               <h3>tranform</h3>
+               tranforma los objetos.<br>
+               ejemplos,<br>
+               <div class="tranform"></div>
+               transform: scale().<br>
+               transform: scalex(),y.<br>
+               skew(10deg);<br>
+               clip-path: generador de fijras.<br>
+           </p>
+           <div>
+               <h3>bagrand</h3>
+               <p>
+                   bagrand-attachment:flexed<br>
+
+                   :root: para agregar variable ejemplos (--color--rojo: rojo)<br>
+                   <div class="filtro">
+                       <div class="filtro-item"> </div>
+                       <div class="filtro-item"></div>
+                     
+               </p>
+           </div>
+       </div>
+    </article>
+</body>
